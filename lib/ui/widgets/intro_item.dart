@@ -51,21 +51,21 @@ class IntroItem extends StatelessWidget {
           ],
         ),
         Container(
-          margin: EdgeInsetsDirectional.only(top: 80),
+          margin: const EdgeInsetsDirectional.only(top: 80),
           alignment: AlignmentDirectional.centerStart,
-          padding: EdgeInsetsDirectional.symmetric(horizontal: 24),
+          padding: const EdgeInsetsDirectional.symmetric(horizontal: 24),
           child: Text(
             title,
-            style: TextStyle(color: AppColor.white, fontSize: 30),
+            style: const TextStyle(color: AppColor.white, fontSize: 30),
           ),
         ),
         Container(
-          margin: EdgeInsetsDirectional.only(top: 16),
+          margin: const EdgeInsetsDirectional.only(top: 16),
           alignment: AlignmentDirectional.centerStart,
-          padding: EdgeInsetsDirectional.symmetric(horizontal: 24),
+          padding: const EdgeInsetsDirectional.symmetric(horizontal: 24),
           child: Text(
             description,
-            style: TextStyle(color: AppColor.white, fontSize: 18, letterSpacing: 1),
+            style: const TextStyle(color: AppColor.white, fontSize: 18, letterSpacing: 1),
           ),
         ),
       ],

@@ -30,13 +30,13 @@ class IntroPagination extends StatelessWidget {
                 border: Border.all(color: AppColor.white, width: 2),
                 borderRadius: BorderRadius.circular(1000),
               ),
-              child: Text(
+              child: const Text(
                 "SKIP",
                 style: TextStyle(color: AppColor.white, fontSize: 16),
               ),
             ),
           ),
-          Container(
+          SizedBox(
             width: 50,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,7 +63,7 @@ class IntroPagination extends StatelessWidget {
                 color: AppColor.primary,
                 borderRadius: BorderRadius.circular(1000),
               ),
-              child: Text(
+              child: const Text(
                 "NEXT",
                 style: TextStyle(color: AppColor.white, fontSize: 16),
               ),

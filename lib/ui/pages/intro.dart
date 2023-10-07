@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:shopping/data/intro_content.dart';
 import 'package:shopping/ui/pages/login_register.dart';

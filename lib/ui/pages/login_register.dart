@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shopping/ui/resources/colors.dart';
 import 'package:shopping/ui/widgets/login_widget.dart';
@@ -58,7 +57,7 @@ class _LoginRegisterPageState extends State<LoginRegisterPage> {
                 ),
                 child: Container(
                   color: AppColor.primary.withOpacity(0.8),
-                  padding: EdgeInsetsDirectional.only(start: 24),
+                  padding: const EdgeInsetsDirectional.only(start: 24),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,7 +66,7 @@ class _LoginRegisterPageState extends State<LoginRegisterPage> {
                         text: TextSpan(
                           text: 'Welcome to ',
                           style: GoogleFonts.ubuntuCondensed(fontSize: 30, color: AppColor.white),
-                          children: <TextSpan>[
+                          children: const <TextSpan>[
                             TextSpan(
                               text: 'Shopping!',
                               style: TextStyle(fontWeight: FontWeight.bold),
@@ -75,7 +74,7 @@ class _LoginRegisterPageState extends State<LoginRegisterPage> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 6),
+                      const SizedBox(height: 6),
                       Text(
                         "Get Started Now..",
                         style: GoogleFonts.ubuntuCondensed(fontSize: 28, color: AppColor.white),
@@ -94,11 +93,11 @@ class _LoginRegisterPageState extends State<LoginRegisterPage> {
                       color: Colors.grey.withOpacity(0.5),
                       spreadRadius: 2,
                       blurRadius: 5,
-                      offset: Offset(0, 1), // changes position of shadow
+                      offset: const Offset(0, 1), // changes position of shadow
                     ),
                   ],
                 ),
-                margin: EdgeInsetsDirectional.only(top: 205, start: 36, end: 36),
+                margin: const EdgeInsetsDirectional.only(top: 205, start: 36, end: 36),
                 child: Row(
                   children: [
                     Expanded(
@@ -136,7 +135,7 @@ class _LoginRegisterPageState extends State<LoginRegisterPage> {
               ),
             ],
           ),
-          pageState == LoginRegisterPageEnum.login ? LoginWidget() : RegisterWidget()
+          pageState == LoginRegisterPageEnum.login ? const LoginWidget() : const RegisterWidget()
         ],
       ),
     );
